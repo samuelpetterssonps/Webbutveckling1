@@ -1,6 +1,12 @@
 body {
-	background-color: brown;
+	background-color: darkred;
 	color: white;
+	font-family: "Chiron GoRound TC", monospace;
+}
+
+*:focus {
+	outline: lime solid 2px;
+	outline-offset: 2px;
 }
 
 main {
@@ -8,33 +14,41 @@ main {
 	margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: lime;
+	font-family: "Righteous", sans-serif, system-ui;
+}
+
 h1 {
 	text-align: center;
-	font-size: 5.87vw;
+	font-size: 6.5vw;
 	margin: 100px 0 0;
-	text-transform: uppercase;
-	font-family: "Monoton", sans-serif, system-ui;
-	font-weight: 400;
-	color: lime;
-
 	span {
-		color: plum;
+		color: lightsalmon;
 	}
+}
+
+h2 {
+	font-size: 3rem;
+	text-decoration: underline;
+	margin-bottom: 10px;
 }
 
 p {
 	font-size: 1rem;
 	line-height: 1.3;
 	margin-bottom: 32px;
-	font-family: "IBM Plex Mono", monospace;
+	text-align: justify;
 }
 
 a {
-	color: aquamarine;
+	color: lime;
 }
 
 a:visited {
-	color: plum;
+	color: lightsalmon;
 }
 
 img {
@@ -42,4 +56,33 @@ img {
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
 	object-position: 0 100%;
+}
+
+.bra-sajter {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+
+	& > a {
+		padding: 16px;
+		border: lightsalmon solid 1px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-decoration: none;
+
+		& > svg {
+			height: 24px;
+			fill: lime;
+		}
+
+		&:hover {
+			background: lime;
+			color: black;
+
+			& > svg {
+				fill: black;
+			}
+		}
+	}
 }
