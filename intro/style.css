@@ -43,3 +43,32 @@ img {
 	object-fit: cover;
 	object-position: 0 100%;
 }
+
+.bra-sajter {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+
+	& > a {
+		padding: 16px;
+		border: lightsalmon solid 1px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-decoration: none;
+
+		& > svg {
+			height: 24px;
+			fill: lime;
+		}
+
+		&:hover {
+			background: lime;
+			color: black;
+
+			& > svg {
+				fill: black;
+			}
+		}
+	}
+}

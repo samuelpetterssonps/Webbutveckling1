@@ -22,6 +22,7 @@ h1 {
     font-style: italic;
     z-index: -10;
     font-family: "Times New Roman", serif;
+    font-variant: small-caps;
 }
 
 .header-image {
@@ -34,6 +35,7 @@ p {
     margin-bottom: 24px;
     text-align: justify;
 }
+
 .portrait {
 
     aspect-ratio: 6 / 7;
