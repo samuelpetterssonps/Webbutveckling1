@@ -1,4 +1,8 @@
-﻿main {
+﻿* {
+    font-family: "Century Gothic", sans-serif, system-ui;
+}
+
+main {
     margin: auto;
     width: 85%;
 
@@ -17,6 +21,7 @@ h1 {
     margin: 0;
     font-style: italic;
     z-index: -10;
+    font-family: "Times New Roman", serif;
 }
 
 .header-image {
@@ -28,7 +33,6 @@ p {
     line-height: 1.6;
     margin-bottom: 24px;
     text-align: justify;
-    font-family: sans-serif, system-ui;
 }
 .portrait {
 
