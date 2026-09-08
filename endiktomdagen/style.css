@@ -1,51 +1,49 @@
-﻿* {
-    font-family: "Century Gothic", sans-serif, system-ui;
+* {
+	font-family: "Century Gothic", sans-serif, system-ui;
 }
 
 main {
-    margin: auto;
-    width: 85%;
+	margin: auto;
+	width: 85%;
 
-    @media screen and (min-width: 1000px) {
-        width: 50%;
-    }
+	@media screen and (min-width: 1000px) {
+		width: 50%;
+	}
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
 
 h1 {
-    line-height: 0.7;
-    margin: 0;
-    font-style: italic;
-    z-index: -10;
-    font-family: "Times New Roman", serif;
-    font-variant: small-caps;
+	line-height: 0.7;
+	margin: 0;
+	font-style: italic;
+	z-index: -10;
+	font-family: "Times New Roman", serif;
+	font-variant: small-caps;
 }
 
 .header-image {
-    aspect-ratio: 4 / 1;
-    margin-bottom: 16px;
+	aspect-ratio: 4 / 1;
+	margin-bottom: 16px;
 }
 
 p {
-    line-height: 1.6;
-    margin-bottom: 24px;
-    text-align: justify;
+	line-height: 1.6;
+	margin-bottom: 24px;
+	text-align: justify;
 }
 
 .portrait {
+	aspect-ratio: 6 / 7;
+	margin-left: 16px;
+	border: black solid 2px;
+	width: 100%;
 
-    aspect-ratio: 6 / 7;
-    margin-left: 16px;
-    border: black solid 2px;
-    width: 100%;
-
-    @media screen and (min-width: 1000px) {
-        width: 25%;
-        float: right;
-    }
+	@media screen and (min-width: 1000px) {
+		width: 25%;
+		float: right;
+	}
 }
-
