@@ -24,7 +24,7 @@ const LINKS = [
 		items: [
 			{
 				title: "Intro",
-				href: "https://github.com/samuelpetterssonps/Webbutveckling1/tree/main/intro"
+				href: "https://samuelpetterssonps.github.io/Webbutveckling1/intro"
 			},
 			{
 				title: "En dikt om dagen",
@@ -61,12 +61,9 @@ for (const category of LINKS) {
 		}
 
 		anchor.href = item.href;
+		anchor.target = "_blank"
+		anchor.rel = "noopener noreferrer"
 		unorderedList.appendChild(listItem)
 	}
 
 }
-
-const webbutvecklingsprojektElement = document.querySelector(
-	"#webbutvecklingsprojekt",
-);
-
