@@ -1,11 +1,17 @@
+:root {
+	--color-background: #2e0a4c;
+	--color-secondary: rgb(158, 98, 8); 
+	--color-interactive: #ffb41f;
+}
+
 body {
-	background-color: darkred;
+	background-color: #2e0a4c;
 	color: white;
 	font-family: "Chiron GoRound TC", sans-serif, system-ui;
 }
 
 *:focus {
-	outline: lime solid 2px;
+	outline: var(--color-interactive) solid 2px;
 	outline-offset: 2px;
 }
 
@@ -31,7 +37,7 @@ h1 {
 	margin: 20px 0 0;
 
 	span {
-		color: lightsalmon;
+		color: var(--color-interactive);
 	}
 }
 
@@ -49,11 +55,11 @@ p {
 }
 
 a {
-	color: lime;
+	color: var(--color-interactive);
 }
 
 a:visited {
-	color: lightsalmon;
+	color: var(--color-secondary);
 }
 
 img {
@@ -74,8 +80,8 @@ img {
 
 	& a {
 		padding: 16px;
-		border: lightsalmon solid 1px;
-		color: lime;
+		border: var(--color-secondary) solid 1px;
+		color: var(--color-interactive);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -83,11 +89,11 @@ img {
 
 		& > svg {
 			height: 24px;
-			stroke: lime;
+			stroke: var(--color-interactive);
 		}
 
 		&:hover {
-			background: lime;
+			background: var(--color-interactive);
 			color: black;
 
 			& > svg {
