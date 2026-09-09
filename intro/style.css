@@ -16,7 +16,7 @@ body {
 }
 
 main {
-	width: 50%;
+	width: clamp(300px, 120px + 56.25vw, 1200px);
 	margin: auto;
 }
 
@@ -33,7 +33,7 @@ h6 {
 
 h1 {
 	text-align: center;
-	font-size: 7vw;
+	font-size: 9vw;
 	margin: 20px 0 0;
 
 	span {
