@@ -32,12 +32,12 @@ const LINKS = [
 			{
 				title: "En dikt om dagen",
 				href:
-					"https://github.com/samuelpetterssonps/Webbutveckling1/tree/main/endiktomdagen",
+					"https://samuelpetterssonps.github.io/Webbutveckling1/endiktomdagen",
 			},
 			{
 				title: "Z-index",
 				href:
-					"https://github.com/samuelpetterssonps/Webbutveckling1/tree/main/z-index",
+					"https://samuelpetterssonps.github.io/Webbutveckling1/z-index/z-index.html",
 			},
 		],
 	},
