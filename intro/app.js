@@ -39,6 +39,10 @@ const LINKS = [
 				href:
 					"https://samuelpetterssonps.github.io/Webbutveckling1/z-index/z-index.html",
 			},
+			{
+				title: "Internet-ordbok",
+				href: "https://samuelpetterssonps.github.io/Webbutveckling1/internet-ordbok",
+			}
 		],
 	},
 	{
