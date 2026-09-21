@@ -4,6 +4,10 @@
 	--color-interactive: #ffb41f;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #2e0a4c;
 	color: white;
@@ -88,7 +92,7 @@ img {
 		text-decoration: none;
 
 		& > svg {
-			height: 24px;
+			height: 20px;
 			stroke: var(--color-interactive);
 		}
 
