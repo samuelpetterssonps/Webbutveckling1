@@ -27,7 +27,7 @@ const LINKS = [
 		items: [
 			{
 				title: "Intro",
-				href: "https://samuelpetterssonps.github.io/Webbutveckling1/intro",
+				href: "https://samuelpetterssonps.github.io/Webbutveckling1",
 			},
 			{
 				title: "En dikt om dagen",
