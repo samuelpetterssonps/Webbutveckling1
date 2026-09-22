@@ -6,7 +6,8 @@
 				<entry key="Deno Config (deno.json)">
 					<value>
 						<SchemaInfo>
-							<option name="name" value="Deno Config (deno.json)" />
+							<option name="name"
+								value="Deno Config (deno.json)" />
 							<option name="relativePathToSchema"
 								value="https://raw.githubusercontent.com/denoland/deno/main/cli/schemas/config-file.v1.json" />
 							<option name="applicationDefined" value="true" />
@@ -16,10 +17,12 @@
 										<option name="path" value="deno.json" />
 									</Item>
 									<Item>
-										<option name="path" value="endiktomdagen/deno.json" />
+										<option name="path"
+											value="endiktomdagen/deno.json" />
 									</Item>
 									<Item>
-										<option name="path" value="z-index/deno.json" />
+										<option name="path"
+											value="z-index/deno.json" />
 									</Item>
 								</list>
 							</option>

@@ -1,6 +1,4 @@
-﻿* {
-	
-}
+* {}
 
 body {
 	font-family: "Urbanist", sans-serif, system-ui;
@@ -11,42 +9,14 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 24px 180px;
+	padding: 16px 180px;
 	align-items: center;
 	gap: 40px;
-	background: rgba(255,255,255,0.7);
 	position: sticky;
 	top: 0;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	backdrop-filter: blur(2px);
-}
-
-header::before {
-	content: '';
-	position: absolute;
-	inset: 0;
-	z-index: 0;
-	overflow: hidden;
-	border-radius: 30px;
-	-webkit-box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
-	box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
-}
-
-header::after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	inset: 0;
-	border-radius: 30px;
-	-webkit-backdrop-filter: blur(0px);
-	backdrop-filter: blur(0px);
-	-webkit-filter: url(#container-glass);
-	filter: url(#container-glass);
-	overflow: hidden;
-	isolation: isolate;
+	z-index: 1;
+	mix-blend-mode: exclusion;
+	background-color: white;
 }
 
 header .logo {
@@ -100,12 +70,29 @@ h2 {
 	text-transform: lowercase;
 }
 
+#om {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+
+@media screen and (min-width: 1000px) {
+	#om {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+#om .image-collection {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: end;
+}
+
 #om img {
-	float: right;
-	aspect-ratio: 1;
 	object-fit: cover;
-	width: 40%;
-	margin-right: 20px;
+	width: 100%;
 }
 
 #om p {

@@ -25,7 +25,8 @@ h3 {
 	font-weight: 700;
 }
 
-h1, .footer-title {
+h1,
+.footer-title {
 	margin: auto;
 	color: white;
 	font-size: 15rem;
@@ -63,7 +64,8 @@ nav ul a.active {
 	text-decoration: none;
 }
 
-nav ul a:hover, nav ul a.active {
+nav ul a:hover,
+nav ul a.active {
 	color: white;
 	background: orangered;
 }
