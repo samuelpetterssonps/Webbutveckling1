@@ -15,7 +15,7 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	mix-blend-mode: exclusion;
+	mix-blend-mode: difference;
 	background-color: white;
 }
 
@@ -74,6 +74,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
+	scroll-margin-top: 80px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -98,4 +99,29 @@ h2 {
 #om p {
 	max-width: 65ch;
 	line-height: 140%;
+}
+
+#musik .release h3,
+#musik .release p {
+	margin: 0;
+}
+
+#musik .release {
+	display: flex;
+	gap: 20px;
+}
+
+#musik .release img {
+	height: 100px;
+	border: 1px solid lightgray;
+}
+
+.listen-links {
+	margin-top: 12px;
+	display: flex;
+	gap: 16px;
+}
+
+.listen-links a svg {
+	height: 24px;
 }
