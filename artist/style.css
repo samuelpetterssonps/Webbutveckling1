@@ -140,6 +140,13 @@ h2 {
 	padding: 24px;
 	width: 100%;
 	color: black;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+#lyssna .listen-links a svg {
+	height: 1.5rem;
 }
 
 #lyssna .listen-links a.spotify {
