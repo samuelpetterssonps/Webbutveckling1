@@ -56,9 +56,7 @@ section {
 
 #hero {
 	display: flex;
-	flex-direction: row;
-	height: 100lvh;
-	max-height: 400px;
+	flex-direction: column;
 	background-size: cover;
 	background-position-y: center;
 	color: black;
@@ -70,6 +68,31 @@ section {
 	width: fit-content;
 	font-size: 1.5rem;
 	text-transform: lowercase;
+}
+
+@media (min-width: 900px) {
+	#hero {
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	#hero img {
+		height: 300px;
+	}
+
+	#hero p {
+		margin: 40px 0 0 0;
+	}
+}
+
+@media (min-width: 1400px) {
+	#hero img {
+		height: 500px;
+	}
+
+	#hero p {
+		margin: 90px 0 0 0;
+	}
 }
 
 #hero h1 {
