@@ -16,7 +16,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 16px 180px;
+	padding: 16px 60px;
 	align-items: center;
 	gap: 40px;
 	position: sticky;
@@ -27,15 +27,25 @@ header {
 	background-color: white;
 }
 
+@media (min-width: 1200px) {
+	padding: 16px 180px;
+}
+
 header .logo {
 	height: 24px;
 }
 
 header nav ul {
+	display: none;
 	list-style: none;
-	display: flex;
 	flex-direction: row;
 	gap: 24px;
+}
+
+@media (min-width: 900px) {
+	header nav ul {
+		display: flex;	
+	}
 }
 
 header nav a {
@@ -44,12 +54,12 @@ header nav a {
 	text-transform: lowercase;
 }
 
-main {
+main, footer {
 	margin: auto;
 	width: 70%;
 }
 
-section {
+section, footer {
 	scroll-margin-top: 80px;
 	margin-bottom: 80px;
 }
@@ -263,6 +273,7 @@ h2 {
 #kontakt select, #kontakt button {
 	padding: 12px;
 	min-height: 40px;
+	font-family: "Urbanist", sans-serif, system-ui;
 }
 
 #kontakt select {
@@ -279,5 +290,24 @@ h2 {
 	background-color: black;
 	color: white;
 	border: solid 1px black;
+	padding: 12px 18px;
+	font-weight: 600;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+footer a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px;
+	color: black;
+}
+
+footer a svg {
+	height: 1rem;
+}
